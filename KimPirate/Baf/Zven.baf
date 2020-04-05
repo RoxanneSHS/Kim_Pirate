@@ -7,6 +7,14 @@ THEN
 END
 
 IF
+Global("pirateobjet","GLOBAL",3)
+!InMyArea("barbe1")
+THEN
+  RESPONSE #100
+    EscapeArea()
+END
+
+IF
   Global("barbefight","GLOBAL",1)
   !Allegiance(Myself,ENEMY)
 THEN

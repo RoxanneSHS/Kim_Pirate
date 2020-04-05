@@ -2,6 +2,7 @@ IF
 OR(2)
 Global("pirateobjet","GLOBAL",1)
 Global("pirateobjet","GLOBAL",3)
+!InMyArea("barbe1")
 THEN
 RESPONSE #100
 EscapeArea()
