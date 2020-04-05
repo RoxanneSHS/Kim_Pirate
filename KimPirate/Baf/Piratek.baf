@@ -1,8 +1,10 @@
 IF
-  Global("pirateobjet","GLOBAL",1)
+OR(2)
+Global("pirateobjet","GLOBAL",1)
+Global("pirateobjet","GLOBAL",3)
 THEN
-  RESPONSE #100
-    EscapeArea()
+RESPONSE #100
+EscapeArea()
 END
 
 IF
