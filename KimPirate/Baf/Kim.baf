@@ -2,6 +2,7 @@ IF
 Global("KimMeetsIllasera","GLOBAL",1)
 Global("IllaseraHostile","GLOBAL",1)
 InParty(Myself)
+HPPercentLT("illasera",35)
 THEN
 RESPONSE #100
 SetGlobal("KimMeetsIllasera","GLOBAL",2)
