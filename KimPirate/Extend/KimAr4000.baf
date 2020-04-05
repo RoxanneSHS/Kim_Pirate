@@ -1,0 +1,21 @@
+IF
+Global("KimRomanceActive","GLOBAL",2)
+Global("KimMeetsIllasera","GLOBAL",2)
+Dead("illasera")
+THEN
+RESPONSE #100
+SetGlobal("KimMeetsIllasera","GLOBAL",3)
+TextScreen("KimLov")
+AddJournalEntry(@367,QUEST_DONE)
+END
+
+IF
+Global("KimMeetsIllasera","GLOBAL",2)
+!Global("KimRomanceActive","GLOBAL",2)
+Dead("illasera")
+THEN
+RESPONSE #100
+SetGlobal("KimMeetsIllasera","GLOBAL",3)
+TextScreen("KimNLov")
+AddJournalEntry(@368,QUEST_DONE)
+END
