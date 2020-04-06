@@ -1,8 +1,18 @@
 IF
   Global("Umbtueekim","GLOBAL",1)
+  InParty("Kim")
 THEN
   RESPONSE #100
     SetGlobal("Umbtueekim","GLOBAL",2)
-    DestroySelf()
+    ActionOverride("ppumb01",Deactivate(Myself))
 END
 
+IF
+Global("Umbtueekim","GLOBAL",2)
+Dead("Umbkim")
+Delay(10)
+THEN
+  RESPONSE #100
+    SetGlobal("Umbtueekim","GLOBAL",3)
+    ActionOverride("ppumb01",Activate(Myself))
+END

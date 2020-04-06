@@ -138,7 +138,11 @@ COPY ~KimPirate/images~ ~override~
 
 COMPILE ~KimPirate/Baf~
 
-EXTEND_TOP ~pries18b.bcs~ ~KimPirate/Extend\Kimumberlee.baf~
+COPY_EXISTING ~AR1604.ARE~ ~override~
+  WRITE_ASCII 0x94 ~AR1604~ #8
+  BUT_ONLY
+
+EXTEND_TOP ~ar1604.bcs~ ~KimPirate/Extend\Kimumberlee.baf~
 EXTEND_BOTTOM ~Ar0300.bcs~ ~KimPirate/Extend/KimAr0300.baf~
 EXTEND_BOTTOM ~Ar0809.bcs~ ~KimPirate/Extend/KimAr0809.baf~
 EXTEND_BOTTOM ~Ar4000.bcs~ ~KimPirate/Extend/KimAr4000.baf~
