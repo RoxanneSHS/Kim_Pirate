@@ -275,6 +275,7 @@ IF
     AreaCheck("AR0400")
     AreaCheck("AR0500")
     AreaCheck("AR0700")
+  Delay(12)
 THEN
   RESPONSE #100
     CreateCreatureOffScreen("Zven",0)
@@ -282,6 +283,7 @@ THEN
     CreateCreatureOffScreen("Pirate2",0)
     CreateCreatureOffScreen("Pirate3",0)
     ActionOverride("Zven",Dialog(Player1))
+    Wait(2)
     StartCutSceneMode()
     StartCutScene("CutPira1")
 END
