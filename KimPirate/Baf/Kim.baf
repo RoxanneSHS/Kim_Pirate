@@ -317,6 +317,7 @@ IF
     AreaCheck("AR0400")
     AreaCheck("AR0500")
     AreaCheck("AR0700")
+  Delay(12)  
 THEN
   RESPONSE #100
     CreateCreature("Barbe1",[-1.-1],0)

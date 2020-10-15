@@ -1,24 +1,31 @@
 IF
-  HPPercentLT(Myself,15)
-  Global("barbemorph","LOCALS",0)
+HPPercentLT(Myself,15)
+Global("barbemorph","LOCALS",0)
 THEN
-  RESPONSE #100
-    SetGlobal("barbemorph","LOCALS",1)
-    Wait(1)
-    StartCutSceneMode()
-    Wait(1)
-    ClearAllActions()
-    ReallyForceSpell(Myself,WIZARD_FIREBALL)
-    Kill("pirate1")
-    Kill("pirate2")
-    Kill("pirate3")
-    Kill("pirate4")
-    Kill("Zven")
-    CreateCreature("barbe2",[-1.-1],0)
-    DestroyAllEquipment()
-    EndCutSceneMode()
-    Wait(1)
-    DestroySelf()
+RESPONSE #100
+StartCutSceneMode()
+Wait(1)
+ClearAllActions()
+ReallyForceSpell(Myself,WIZARD_FIREBALL)
+Kill("pirate1")
+Kill("pirate2")
+Kill("pirate3")
+Kill("pirate4")
+Kill("Zven")
+CreateCreature("barbe2",[-1.-1],S)
+Wait(1)
+DestroyAllEquipment()
+Wait(1)
+SetGlobal("barbemorph","LOCALS",1)
+Wait(1)
+EndCutSceneMode()
+END
+
+IF
+Global("barbemorph","LOCALS",1)
+THEN
+RESPONSE #100
+DestroySelf()
 END
 
 IF
