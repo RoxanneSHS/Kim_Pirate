@@ -525,6 +525,15 @@ THEN
 END
 
 IF
+  InParty(Myself)
+  !Global("Kimmatch","GLOBAL",1)
+  Global("GTKUKIM","LOCALS",28)
+THEN
+  RESPONSE #100
+    SetGlobal("GTKUKIM","LOCALS",29)
+END
+
+IF
   CombatCounter(0)
   !Detect([ENEMY])
   InParty(Myself)
