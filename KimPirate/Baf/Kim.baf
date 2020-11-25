@@ -363,6 +363,7 @@ IF
   PartyHasItem("Cartbar2")
   Global("ileautresor","LOCALS",0)
   !AreaCheck("AR1604")
+  InParty(Myself)
 THEN
   RESPONSE #100
     SetGlobal("ileautresor","LOCALS",1)
@@ -373,6 +374,8 @@ IF
   PartyHasItem("Cartbar")
   PartyHasItem("Cartbar2")
   Global("ileautresor","LOCALS",1)
+  AreaType(OUTDOOR)
+  InParty(Myself)
 THEN
   RESPONSE #100
    SetGlobal("ileautresor","LOCALS",2)
@@ -394,6 +397,7 @@ END
 IF
   Global("skullfin","GLOBAL",4)
   Global("echecquete","LOCALS",0)
+  InParty(Myself)
 THEN
   RESPONSE #100
     ClearAllActions()
@@ -406,6 +410,7 @@ END
 IF
   Global("skullfin","GLOBAL",7)
   Global("succesquete","LOCALS",0)
+  InParty(Myself)
 THEN
   RESPONSE #100
     SetGlobal("succesquete","LOCALS",1)
