@@ -383,7 +383,7 @@ I do not care, Ocean. Who needs you?~
 @367 = ~Well, well. So I guess it was a coincidence when you came sticking right next to me, earlier. In any case, I offer you a deal. If you give me back the ring you stole from me... I'll give you back your purse.~
 @368 = ~Oh, a colleague, I see. We will have much fun! Oh, here's your ring... and some coins I took inadvertently...~
 @369 = ~You're good at this, aren't you. Hey, I have an idea... Rather than rob us mutually, why don't we go annoy <CHARNAME>? Hey, <PRO_HESHE> deserves it, given all the dangers that we face because of <PRO_HIMHER>.~
-@370 = ~Alright. I speak to him, and you pick his purse.~
+@370 = ~Alright. I speak to <PRO_HIMHER>, and you pick <PRO_HISHER> purse.~
 @371 = ~It promises to be fun.~
 @372 = ~Hey, it's me, Imoen... good to see you again!~
 @373 = ~Huh? Why do you say that?~
