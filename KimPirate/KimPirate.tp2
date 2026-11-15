@@ -23,6 +23,10 @@ LANGUAGE ~English~
 	 ~English~
 	 ~KimPirate/English/Setup.tra~
 
+LANGUAGE ~Schinese~
+	 ~schinese~
+	 ~KimPirate/Schinese/Setup.tra~
+	 
 BEGIN @0
 
 COPY ~KimPirate/Cre/Kim.cre~ ~override~
@@ -154,7 +158,7 @@ COMPILE EVALUATE_BUFFER ~KimPirate/Extend/KimJ.d~
 
 COMPILE ~KimPirate/D~
 
-ADD_JOURNAL @367 USING ~KimPirate/English/Setup.tra~
+ADD_JOURNAL @367 USING ~KimPirate/%LANGUAGE%/Setup.tra~
 
 COPY ~KimPirate/Extend/Kimlov.2da~  ~override~
 REPLACE ~99999~ @367
